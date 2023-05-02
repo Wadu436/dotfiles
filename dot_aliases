@@ -15,7 +15,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias la='ls -alh' # show hidden files
+alias la='exa -al' # show hidden files
 alias ls='ls -AXFh --color=always' # add colors and file type extensions
 alias lx='ls -lXBh' # sort by extension
 alias lk='ls -lSrh' # sort by size
