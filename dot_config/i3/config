@@ -52,7 +52,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1.5 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -218,8 +218,6 @@ for_window [class="Bitwarden"] floating enable
 # e.g. from workspace n, activate workspace 1 goes to workspace 1, activate workspace 1 again goes back to workspace n
 workspace_auto_back_and_forth yes
 
-gaps inner 5
-
 # Move workspace to next monitor
 bindsym $mod+o move workspace to output left
 
@@ -259,5 +257,6 @@ mode "$mode_system" {
 
 bindsym $mod+Pause mode "$mode_system"
 
-exec --no-startup-id i3-msg 'workspace 2; exec discord'
-exec --no-startup-id i3-msg 'workspace 2; exec firefox https://messenger.com/'
+# assign [class="discord"] number $ws2
+
+# exec --no-startup-id i3-msg 'workspace number $ws1; exec --no-startup-id firefox; workspace number $ws2; exec --no-startup-id discord; workspace number $ws2; exec --no-startup-id firefox "https://messenger.com"'
