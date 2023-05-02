@@ -98,7 +98,7 @@ RPROMPT='%B[%*]%b'
 source ~/.aliases
 
 # Set path
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 
 # Set editor
 export VISUAL=vim
